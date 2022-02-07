@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React from 'react';
+import LifecycleA from './LifecycleA';
+import CompB from './CompB';
+import CompA from './CompA';
+const App = () => {
+  return <div>
+  <CompB name='rohit' />
+  <CompB name= 'rony'/>
+  <CompB name='ros' />
+  <CompB name='rocky' />
+  <CompA name='Rohit'/>
+  <CompA name= 'ron'/>
+  <CompA name= 'ros' />
+  <CompA name='rocky' />
+    {/* <LifecycleA/> */}
+  </div>;
+};
 
 export default App;
